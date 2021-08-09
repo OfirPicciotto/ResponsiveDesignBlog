@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <title>Blog</title>
+</head>
+
+<body>
+  <div class="screen" onclick="toggleMenu()"></div>
+  <div class="modal-screen" onclick="toggleModal()"></div>
+
+  <header class="main-header">
+    <div class="nav-bar-container main-layout">
+      <div class="logo">Blogin<span>.</span></div>
+      <div onclick="toggleMenu()" class="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="main-nav nav-not-show">
+        <div class="drop-down-container">
+          <li class="nav-item1" onmouseover="onDropDownMenu()" onclick="onClickNavBtn(1)">
+            <a href="#">Journal</a>
+          </li>
+          <ul class="drop-down-menu">
+            <li class="drop-down-item">October 2016</li>
+            <li class="drop-down-item">January 2017</li>
+            <li class="drop-down-item">April 2017</li>
+            <li class="drop-down-item">July 2017
+            </li>
+          </ul>
+        </div>
+        <li class="nav-item2" onclick="onClickNavBtn(2)"><a href="#">About</a></li>
+        <li class="nav-item3" onclick="onClickNavBtn(3)"><a href="#">Work</a></li>
+        <li class="nav-item4" onclick="onClickNavBtn(4)"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="main-content main-layout">
+    <div class="card">
+      <img class="main-img" src="images/001.jpg" alt="" />
+      <div class="card-content">
+        <h3>Duis aute irure dolor in henderit in voluptate.</h3>
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.
+          <br><br>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur...
+        </p>
+        <button class="continue-btn" onclick="toggleModal()">Continue Reading</button>
+      </div>
+    </div>
+    <div class="card">
+      <img class="main-img" src="images/002.jpg" alt="" />
+      <div class="card-content">
+        <h3>Duis aute irure dolor in henderit in voluptate.</h3>
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.
+          <br><br>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur...
+        </p>
+        <button class="continue-btn" onclick="toggleModal()">Continue Reading</button>
+      </div>
+    </div>
+    <div class="card">
+      <img class="main-img" src="images/003.jpg" alt="" />
+      <div class="card-content">
+        <h3>Duis aute irure dolor in henderit in voluptate.</h3>
+        <p>
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commo doconsequat, sunt in culpa qui officia
+          deserunt mollit anim id est laborum.
+          <br><br>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur...
+        </p>
+        <button class="continue-btn" onclick="toggleModal()">Continue Reading</button>
+      </div>
+    </div>
+    <div class="page-nav">
+      <a href="">&#8592; Previous</a>
+      <a href="">Next &#8594;</a>
+    </div>
+  </main>
+  <footer class="footer-container">
+    <div class="logo">Blogin<span>.</span></div>
+    <small>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+      <span>Pixelhint.com</span></small>
+    <ul class="social-nav flex align-center clean-list">
+      <li class="social-facebook"><a href="social-facebook" class="fab fa-facebook-f"></a></li>
+      <li class="social-twitter"><a href="social-twitter" class="fab fa-twitter"></a></li>
+      <li class="social-behance"><a href="social-behance" class="fab fa-behance"></a></li>
+      <li class="social-dribble"><a href="social-dribbble" class="fab fa-dribble"></a></li>
+    </ul>
+  </footer>
+
+  <div class="popup-modal">
+    <div class="modal-content">
+      <h3>Duis aute irure dolor in henderit in voluptate.</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+        obcaecati ipsam quaerat quam excepturi corporis a neque suscipit
+        cumque provident
+      </p>
+      dolores in nemo vero, eveniet aliquam dolor molestias enim iure?
+      Provident excepturi placeat libero saepe.
+      </p>
+      <button onclick="toggleModal()">Close</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
